@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="11.1.1.59.23" id="TestPagePageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables">
+    	<variable Name="greeting" Type="java.lang.String" DefaultValue="Say Hallo!" />
+    </variableIterator>
+  </executables>
+  <bindings>
+	    <attributeValues id="testVar" IterBinding="variables">
+	      <AttrNames>
+	        <Item Value="greeting"/>
+	      </AttrNames>
+	    </attributeValues>
+	</bindings>
+</pageDefinition>

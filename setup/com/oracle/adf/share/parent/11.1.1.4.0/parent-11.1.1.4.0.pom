@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.oracle.adf.share</groupId>
+  <artifactId>parent</artifactId>
+  <version>11.1.1.4.0</version>
+  <packaging>pom</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.oracle.adf.share</groupId>
+            <artifactId>adf-share-support</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+		<dependency>
+            <groupId>com.oracle.adf.share</groupId>
+            <artifactId>adfsharembean</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+		<dependency>
+            <groupId>com.oracle.adf.share</groupId>
+            <artifactId>adflogginghandler</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+	</dependencies>
+</project>

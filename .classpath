@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="ViewController/target/classes" path="ViewController/src/main/java"/>
+	<classpathentry excluding="**" kind="src" output="ViewController/target/classes" path="ViewController/src/main/resources"/>
+	<classpathentry kind="src" output="ViewController/target/test-classes" path="ViewController/src/test/java"/>
+	<classpathentry excluding="**" kind="src" output="ViewController/target/test-classes" path="ViewController/src/test/resources"/>
+	<classpathentry kind="src" output="ViewController/target" path="ViewController/src/main/webapp"/>
+	<classpathentry kind="src" output="Model/target/classes" path="Model/src/main/java"/>
+	<classpathentry excluding="**" kind="src" output="Model/target/classes" path="Model/src/main/resources"/>
+	<classpathentry kind="src" output="Model/target/test-classes" path="Model/src/test/java"/>
+	<classpathentry excluding="**" kind="src" output="Model/target/test-classes" path="Model/src/test/resources"/>
+	<classpathentry excluding="**" kind="src" output="ear/target" path="ear/src/main/application"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.maven.ide.eclipse.MAVEN2_CLASSPATH_CONTAINER"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

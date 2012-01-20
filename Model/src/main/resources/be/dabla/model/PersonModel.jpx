@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+<!---->
+<JboProject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PersonModel"
+  Version="11.1.1.59.23"
+  SeparateXMLFiles="true"
+  PackageName="be.dabla.model">
+  <DesignTime>
+    <Attr Name="_jprName"
+      Value="../../../../../../adf-maven-demo_model.jpr"/>
+    <Attr Name="_NamedConnection" Value="LOCAL_DB_ADF_MAVEN_DEMO"/>
+    <Attr Name="_appModuleNames0"
+      Value="be.dabla.model.app.PersonAM"/>
+  </DesignTime>
+  <Containee
+    Name="app"
+    PackageName="be.dabla.model.app"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_AM" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="entity"
+    PackageName="be.dabla.model.entity"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_EO" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="view"
+    PackageName="be.dabla.model.view"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_VO" Value="true"/>
+    </DesignTime>
+  </Containee>
+</JboProject>

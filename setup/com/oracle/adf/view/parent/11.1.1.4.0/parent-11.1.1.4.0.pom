@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.oracle.adf.view</groupId>
+  <artifactId>parent</artifactId>
+  <version>11.1.1.4.0</version>
+  <packaging>pom</packaging>
+    <dependencies>
+    	<dependency>
+            <groupId>com.oracle.adf.view</groupId>
+            <artifactId>adf-faces-databinding-rt</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.oracle.adf.view</groupId>
+            <artifactId>adf-richclient-api-11</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+		<dependency>
+            <groupId>com.oracle.adf.view</groupId>
+            <artifactId>adf-richclient-impl-11</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+		<dependency>
+            <groupId>com.oracle.adf.view</groupId>
+            <artifactId>dvt-faces</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+		<dependency>
+            <groupId>com.oracle.adf.view</groupId>
+            <artifactId>dvt-jclient</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+		<dependency>
+            <groupId>com.oracle.adf.view</groupId>
+            <artifactId>dvt-trinidad</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+		<dependency>
+            <groupId>com.oracle.adf.view</groupId>
+            <artifactId>dvt-utils</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+	</dependencies>
+</project>

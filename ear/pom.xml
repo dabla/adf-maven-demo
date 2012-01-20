@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>be.dabla</groupId>
+		<artifactId>adf-maven-demo</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	
+	<artifactId>adf-maven-demo_application</artifactId>
+	<packaging>ear</packaging>
+	<name>ear</name>
+	
+	<dependencies>
+		<dependency>
+			<groupId>be.dabla</groupId>
+			<artifactId>adf-maven-demo_view-controller_webapp</artifactId>
+			<version>${project.version}</version>
+			<type>war</type>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<filtering>true</filtering>
+					<defaultJavaBundleDir>APP-INF/lib</defaultJavaBundleDir>
+					<displayName>adf-maven-demo_application</displayName>
+					<description>ADF Maven Demo</description>
+					<version>5</version>
+					<archive>
+						<manifestEntries>
+							<WebLogic-Application-Version>${project.version}</WebLogic-Application-Version>
+						</manifestEntries>
+					</archive>
+					<modules>
+						<webModule>
+							<groupId>be.dabla</groupId>
+							<artifactId>adf-maven-demo_view-controller_webapp</artifactId>
+							<contextRoot>adf-maven-demo-context-root</contextRoot>
+							<excluded>web.xml</excluded>
+						</webModule>
+					</modules>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

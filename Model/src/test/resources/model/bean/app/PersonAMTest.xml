@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://jtestcase.sourceforge.net/dtd/jtestcase2.xsd">
+    <class name="PersonAMTest">
+        <!--adding more method tags-->
+        <method name="testAccess">
+            <!--adding zero or more test-case tags-->
+        </method>
+    </class>
+</tests>

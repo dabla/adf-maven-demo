@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.oracle.adf</groupId>
+  <artifactId>parent</artifactId>
+  <version>11.1.1</version>
+  <packaging>pom</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.oracle.facesconfigdt</groupId>
+            <artifactId>facesconfigmodel</artifactId>
+            <version>1.1.14</version>
+        </dependency>
+		
+		<dependency>
+            <groupId>com.oracle.adf.view</groupId>
+            <artifactId>parent</artifactId>
+            <version>11.1.1.4.0</version>
+			<type>pom</type>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.oracle.adf.controller</groupId>
+			<artifactId>parent</artifactId>
+			<version>11.1.1.4.0</version>
+			<type>pom</type>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.oracle.adf.pageflow</groupId>
+			<artifactId>parent</artifactId>
+			<version>11.1.1.4.0</version>
+			<type>pom</type>
+        </dependency>
+
+		<dependency>
+            <groupId>com.oracle.adf.security</groupId>
+			<artifactId>parent</artifactId>
+			<version>11.1.1.4.0</version>
+			<type>pom</type>
+        </dependency>
+
+		<dependency>
+            <groupId>com.oracle.mds</groupId>
+            <artifactId>mdsrt</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+        
+        <dependency>
+			<groupId>com.oracle.jdbc</groupId>
+			<artifactId>ojdbc6dms</artifactId>
+			<version>11.2.0.2.0</version>
+		</dependency>
+		
+		<dependency>
+            <groupId>com.oracle.jrf</groupId>
+            <artifactId>jrf-api</artifactId>
+            <version>11.1.1.0.0</version>
+        </dependency>
+
+		<dependency>
+            <groupId>com.oracle.adf.share</groupId>
+            <artifactId>parent</artifactId>
+            <version>11.1.1.4.0</version>
+			<type>pom</type>
+        </dependency>
+		
+		<dependency>
+            <groupId>com.oracle.adf.share.ca</groupId>
+            <artifactId>parent</artifactId>
+            <version>11.1.1.4.0</version>
+			<type>pom</type>
+        </dependency>
+
+		<dependency>
+            <groupId>com.oracle.adf.model</groupId>
+            <artifactId>parent</artifactId>
+            <version>11.1.1.4.0</version>
+			<type>pom</type>
+        </dependency>
+		
+		<dependency>
+            <groupId>com.oracle.javacache</groupId>
+            <artifactId>cache</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+		
+		<dependency>
+            <groupId>com.oracle.dms</groupId>
+            <artifactId>dms</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+
+		<dependency>
+            <groupId>com.oracle.odl</groupId>
+            <artifactId>ojdl</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+		
+		<dependency>
+            <groupId>com.oracle.bali.share</groupId>
+            <artifactId>share</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+		
+		<dependency>
+            <groupId>com.oracle.xmlef</groupId>
+            <artifactId>xmlef</artifactId>
+            <version>11.1.1.4.0</version>
+        </dependency>
+        
+        <dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>xdb</artifactId>
+			<version>11.1.0</version>
+		</dependency>
+		
+		<dependency>
+            <groupId>com.oracle.as.jmx</groupId>
+            <artifactId>parent</artifactId>
+            <version>11.1.1.0.0</version>
+			<type>pom</type>
+        </dependency>
+		
+		<dependency>
+			<groupId>javax.el</groupId>
+		    <artifactId>el-api</artifactId>
+		    <version>2.2</version>
+    	</dependency>
+		
+		<dependency>
+			<groupId>javax.faces</groupId>
+			<artifactId>jsf-api</artifactId>
+			<version>1.2_15</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.faces</groupId>
+			<artifactId>jsf-impl</artifactId>
+			<version>1.2_15</version>
+		</dependency>
+		<dependency>
+	        <groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.sun.facelets</groupId>
+			<artifactId>jsf-facelets</artifactId>
+			<version>1.1.14</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.myfaces.trinidad</groupId>
+			<artifactId>trinidad-api</artifactId>
+			<version>1.2.14</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.myfaces.trinidad</groupId>
+			<artifactId>trinidad-impl</artifactId>
+			<version>1.2.14</version>
+		</dependency>
+		
+		<dependency>
+            <groupId>com.oracle.javatools</groupId>
+			<artifactId>parent</artifactId>
+			<version>11.1.1.4.0</version>
+			<type>pom</type>
+        </dependency>
+	</dependencies>
+</project>

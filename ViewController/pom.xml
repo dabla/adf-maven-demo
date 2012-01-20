@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>be.dabla</groupId>
+		<artifactId>adf-maven-demo</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>adf-maven-demo_view-controller_webapp</artifactId>
+	<packaging>war</packaging>
+	<name>ViewController</name>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.jboss.arquillian</groupId>
+				<artifactId>arquillian-bom</artifactId>
+				<version>1.0.0.CR1</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<dependencies>  
+		<dependency>  
+			<groupId>be.dabla</groupId>
+			<artifactId>adf-maven-demo_model</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>  
+			<groupId>com.oracle.adf</groupId>
+			<artifactId>parent</artifactId>
+			<version>11.1.1</version>
+			<scope>provided</scope>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.jsfunit</groupId>
+			<artifactId>jsfunit-arquillian</artifactId>
+			<version>2.0.0.Beta2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.arquillian.junit</groupId>
+			<artifactId>arquillian-junit-container</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.arquillian.container</groupId>
+			<artifactId>arquillian-glassfish-embedded-3.1</artifactId>
+			<version>1.0.0.CR1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.extras</groupId>
+			<artifactId>glassfish-embedded-all</artifactId>
+			<version>3.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javaee</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>5</version>
+			<scope>provided</scope>
+		</dependency>
+		<!--
+			this dependency is added seperatly at the end otherwise embedded Glassfish will throw following exception:
+			org.jboss.shrinkwrap.descriptor.api.DescriptorExportException: Could not export Node strcuture to XML
+		  -->
+		<dependency>
+            <groupId>com.oracle.xdk</groupId>
+            <artifactId>xmlparserv2</artifactId>
+            <version>11.1.1.3.0</version>
+            <scope>test</scope>
+        </dependency>
+	</dependencies>  
+	
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<excludes>
+					<exclude>**/*.cpx</exclude>
+				</excludes>
+			</resource>
+		</resources>
+	</build>
+</project>

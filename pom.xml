@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>be.dabla</groupId>
+	<artifactId>adf-maven-demo</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>ADF Maven Demo</name>
+
+	<organization>
+		<name>dablomatique</name>
+		<url>http://dablomatique.wordpress.com/</url>
+	</organization>
+	
+	<developers>
+		<developer>
+			<id>dabla</id>
+			<name>David Blain</name>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<email>dablomatique@gmail.com</email>
+			<organization>dablomatique</organization>
+		</developer>
+	</developers>
+
+	<modules>
+		<module>Model</module>
+		<module>ViewController</module>
+		<module>ear</module>
+	</modules>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.apache.myfaces.trinidadbuild</groupId>
+				<artifactId>maven-jdev-plugin</artifactId>
+				<version>2.0.7</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>2.0.2</version>
+					<configuration>
+						<source>1.6</source>
+						<target>1.6</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.9</version>
+					<configuration>
+						<forkMode>once</forkMode>
+						<!-- http://jlorenzen.blogspot.com/2007/07/how-to-capture-logging-output-in-unit.html -->
+						<systemProperties>
+							<property>
+							<name>java.util.logging.config.file</name>
+							<value>${basedir}/src/test/resources/logging.properties</value>
+							</property>
+						</systemProperties>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

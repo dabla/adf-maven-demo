@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PersonVO"
+  Version="11.1.1.59.23"
+  SelectList="PersonEO.ID, 
+       PersonEO.FIRSTNAME, 
+       PersonEO.NAME, 
+       PersonEO.BIRTHDATE"
+  FromList="PERSONS PersonEO"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false"
+  ComponentClass="be.dabla.model.view.PersonVOImpl">
+  <DesignTime>
+    <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess"/>
+  </DesignTime>
+ <EntityUsage
+    Name="PersonEO"
+    Entity="be.dabla.model.entity.PersonEO"
+    ReadOnly="true"
+    DeleteParticipant="false"/>
+  <ViewAttribute
+    Name="Id"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Id"
+    EntityUsage="PersonEO"
+    AliasName="ID"/>
+  <ViewAttribute
+    Name="Firstname"
+    PrecisionRule="true"
+    EntityAttrName="Firstname"
+    EntityUsage="PersonEO"
+    AliasName="FIRSTNAME">
+  </ViewAttribute>
+  <ViewAttribute
+    Name="Name"
+    PrecisionRule="true"
+    EntityAttrName="Name"
+    EntityUsage="PersonEO"
+    AliasName="NAME">
+  </ViewAttribute>
+</ViewObject>
