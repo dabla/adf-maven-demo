@@ -15,7 +15,7 @@ public abstract class EmbeddedGlassfishTestCase {
 	
 	@Deployment
     public static WebArchive createDeployment()
-    {org.jboss.shrinkwrap.impl.base.filter.ExcludeRegExpPaths d;
+    {
             final WebArchive war = ShrinkWrap.create(WebArchive.class, "test.jar")
             				.setWebXML((new File("src/test/resources/web.xml").exists() ? new File("src/test/resources/web.xml") : new File("src/main/webapp/WEB-INF/web.xml")))
                             .addPackage(Package.getPackage("be.dabla.model"));
