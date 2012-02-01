@@ -12,10 +12,12 @@ call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/ora
 call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/adf-faces-databinding-rt.jar -DgroupId=com.oracle.adf.view -DartifactId=adf-faces-databinding-rt -Dversion=11.1.1.4.0 -Dpackaging=jar
 call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/adf-richclient-api-11.jar -DgroupId=com.oracle.adf.view -DartifactId=adf-richclient-api-11 -Dversion=11.1.1.4.0 -Dpackaging=jar
 call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/adf-richclient-impl-11.jar -DgroupId=com.oracle.adf.view -DartifactId=adf-richclient-impl-11 -Dversion=11.1.1.4.0 -Dpackaging=jar
+call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/bundleresolver.jar -DgroupId=com.oracle.adf.view -DartifactId=bundleresolver -Dversion=11.1.1.4.0 -Dpackaging=jar
 call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/dvt-faces.jar -DgroupId=com.oracle.adf.view -DartifactId=dvt-faces -Dversion=11.1.1.4.0 -Dpackaging=jar
 call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/dvt-jclient.jar -DgroupId=com.oracle.adf.view -DartifactId=dvt-jclient -Dversion=11.1.1.4.0 -Dpackaging=jar
 call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/dvt-trinidad.jar -DgroupId=com.oracle.adf.view -DartifactId=dvt-trinidad -Dversion=11.1.1.4.0 -Dpackaging=jar
 call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/dvt-utils.jar -DgroupId=com.oracle.adf.view -DartifactId=dvt-utils -Dversion=11.1.1.4.0 -Dpackaging=jar
+call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/oracle-page-templates.jar -DgroupId=com.oracle.adf.view -DartifactId=oracle-page-templates -Dversion=11.1.1.4.0 -Dpackaging=jar
 
 call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.mds_11.1.1/mdsrt.jar -DgroupId=com.oracle.mds -DartifactId=mdsrt -Dversion=11.1.1.4.0 -Dpackaging=jar
 
@@ -63,7 +65,9 @@ call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/ora
 
 call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.pageflow_11.1.1/adf-pageflow-fwk.jar -DgroupId=com.oracle.adf.pageflow -DartifactId=adf-pageflow-fwk -Dversion=11.1.1.4.0 -Dpackaging=jar
 call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.pageflow_11.1.1/adf-pageflow-impl.jar -DgroupId=com.oracle.adf.pageflow -DartifactId=adf-pageflow-impl -Dversion=11.1.1.4.0 -Dpackaging=jar
-		
+
+call mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.jsp_11.1.1/ojsp.jar -DgroupId=com.oracle.jsp -DartifactId=ojsp -Dversion=11.1.1.4.0 -Dpackaging=jar	
+
 set MAVEN_REPO=%USERPROFILE%/.m2/repository
 
 xcopy "com/oracle/adf/parent" "%MAVEN_REPO%/com/oracle/adf/parent" /E/I

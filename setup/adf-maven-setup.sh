@@ -12,6 +12,8 @@ then
 
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/adf-richclient-impl-11.jar -DgroupId=com.oracle.adf.view -DartifactId=adf-richclient-impl-11 -Dversion=11.1.1.4.0 -Dpackaging=jar
 
+  mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/bundleresolver.jar -DgroupId=com.oracle.adf.view -DartifactId=bundleresolver -Dversion=11.1.1.4.0 -Dpackaging=jar
+  
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/dvt-faces.jar -DgroupId=com.oracle.adf.view -DartifactId=dvt-faces -Dversion=11.1.1.4.0 -Dpackaging=jar
 
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/dvt-jclient.jar -DgroupId=com.oracle.adf.view -DartifactId=dvt-jclient -Dversion=11.1.1.4.0 -Dpackaging=jar
@@ -20,6 +22,8 @@ then
 
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/dvt-utils.jar -DgroupId=com.oracle.adf.view -DartifactId=dvt-utils -Dversion=11.1.1.4.0 -Dpackaging=jar
 
+  mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.view_11.1.1/oracle-page-templates.jar -DgroupId=com.oracle.adf.view -DartifactId=oracle-page-templates -Dversion=11.1.1.4.0 -Dpackaging=jar
+  
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.mds_11.1.1/mdsrt.jar -DgroupId=com.oracle.mds -DartifactId=mdsrt -Dversion=11.1.1.4.0 -Dpackaging=jar
 
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.jdbc_11.1.1/ojdbc6dms.jar -DgroupId=com.oracle.jdbc -DartifactId=ojdbc6dms -Dversion=11.2.0.2.0 -Dpackaging=jar
@@ -77,6 +81,8 @@ then
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.pageflow_11.1.1/adf-pageflow-fwk.jar -DgroupId=com.oracle.adf.pageflow -DartifactId=adf-pageflow-fwk -Dversion=11.1.1.4.0 -Dpackaging=jar
 
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.pageflow_11.1.1/adf-pageflow-impl.jar -DgroupId=com.oracle.adf.pageflow -DartifactId=adf-pageflow-impl -Dversion=11.1.1.4.0 -Dpackaging=jar
+  
+  mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.jsp_11.1.1/ojsp.jar -DgroupId=com.oracle.jsp -DartifactId=ojsp -Dversion=11.1.1.4.0 -Dpackaging=jar
   
   cp -R ./com ~/.m2/repository/
   
