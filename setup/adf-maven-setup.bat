@@ -1,7 +1,7 @@
 @echo off
-set MIDDLEWARE_HOME=C:/apps/Oracle/Middleware/home_11gR1
+IF NOT EXIST "%MIDDLEWARE_HOME%" set MIDDLEWARE_HOME=C:/Oracle/Middleware
 
-IF EXIST MIDDLEWARE_HOME\NUL GOTO install
+IF EXIST %MIDDLEWARE_HOME%\NUL GOTO install
 echo Incorrect Middleware path '%MIDDLEWARE_HOME%', please correct the variable in adf-maven-setup.bat-file!
 pause
 exit
