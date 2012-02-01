@@ -36,6 +36,10 @@ then
 
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.share_11.1.1/adflogginghandler.jar -DgroupId=com.oracle.adf.share -DartifactId=adflogginghandler -Dversion=11.1.1.4.0 -Dpackaging=jar
 
+  mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.share_11.1.1/commons-el.jar -DgroupId=com.oracle.adf.share -DartifactId=commons-el -Dversion=11.1.1.4.0 -Dpackaging=jar
+
+  mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.share_11.1.1/oracle-el.jar -DgroupId=com.oracle.adf.share -DartifactId=oracle-el -Dversion=11.1.1.4.0 -Dpackaging=jar
+
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.share.ca_11.1.1/adf-share-base.jar -DgroupId=com.oracle.adf.share.ca -DartifactId=adf-share-base -Dversion=11.1.1.4.0 -Dpackaging=jar
 
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.share.ca_11.1.1/adf-share-ca.jar -DgroupId=com.oracle.adf.share.ca -DartifactId=adf-share-ca -Dversion=11.1.1.4.0 -Dpackaging=jar
@@ -45,6 +49,10 @@ then
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.model_11.1.1/adfmweb.jar -DgroupId=com.oracle.adf.model -DartifactId=adfmweb -Dversion=11.1.1.4.0 -Dpackaging=jar
 
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.model_11.1.1/db-ca.jar -DgroupId=com.oracle.adf.model -DartifactId=db-ca -Dversion=11.1.1.4.0 -Dpackaging=jar
+
+  mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.model_11.1.1/bc4j-mbeans.jar -DgroupId=com.oracle.adf.model -DartifactId=bc4j-mbeans -Dversion=11.1.1.4.0 -Dpackaging=jar
+
+  mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.model_11.1.1/adflibfilter.jar -DgroupId=com.oracle.adf.model -DartifactId=adflibfilter -Dversion=11.1.1.4.0 -Dpackaging=jar
 
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.javacache_11.1.1/cache.jar -DgroupId=com.oracle.javacache -DartifactId=cache -Dversion=11.1.1.4.0 -Dpackaging=jar
 
@@ -83,6 +91,10 @@ then
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.adf.pageflow_11.1.1/adf-pageflow-impl.jar -DgroupId=com.oracle.adf.pageflow -DartifactId=adf-pageflow-impl -Dversion=11.1.1.4.0 -Dpackaging=jar
   
   mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.jsp_11.1.1/ojsp.jar -DgroupId=com.oracle.jsp -DartifactId=ojsp -Dversion=11.1.1.4.0 -Dpackaging=jar
+  
+  mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/modules/oracle.jps_11.1.1/jps-ee.jar -DgroupId=com.oracle.jps -DartifactId=jps-ee -Dversion=11.1.1.4.0 -Dpackaging=jar
+  
+  mvn install:install-file -Dfile=%MIDDLEWARE_HOME%/oracle_common/webservices/wsclient_extended.jar -DgroupId=com.oracle.webservices -DartifactId=wsclient-extended -Dversion=11.1.1 -Dpackaging=jar
   
   cp -R ./com ~/.m2/repository/
   
