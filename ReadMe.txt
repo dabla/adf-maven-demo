@@ -11,3 +11,7 @@ The database you're referring to doesn't need to contain any tables, you're fine
 To generate the project files for JDeveloper, run the following command from the root of the project (also see explanation at http://www.gwr.no/?p=501):
 
 mvn -Djdev.release=11.1.1.1.0 org.apache.myfaces.trinidadbuild:maven-jdev-plugin:jdev
+
+If you receive a java.lang.OutOfMemoryError: Java heap space when running the tests in the ViewController project, just define an environment variable as follow:
+
+set MAVEN_OPTS=-Xms256m -Xmx1024m -XX:MaxPermSize=512m

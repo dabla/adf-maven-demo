@@ -26,6 +26,16 @@
 			<organization>dablomatique</organization>
 		</developer>
 	</developers>
+	
+	<repositories>
+	    <repository>
+	        <id>EclipseLink Repo</id>
+	        <url>http://download.eclipse.org/rt/eclipselink/maven.repo</url>
+	        <snapshots>
+	            <enabled>true</enabled>
+	        </snapshots>
+	    </repository>
+	</repositories>
 
 	<modules>
 		<module>Model</module>
@@ -61,6 +71,7 @@
 					<version>2.9</version>
 					<configuration>
 						<forkMode>once</forkMode>
+						<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 						<!-- http://jlorenzen.blogspot.com/2007/07/how-to-capture-logging-output-in-unit.html -->
 						<systemProperties>
 							<property>

@@ -127,7 +127,6 @@
 			<artifactId>el-api</artifactId>
 			<version>2.2</version>
 		</dependency>
-
 		<dependency>
 			<groupId>javax.faces</groupId>
 			<artifactId>jsf-api</artifactId>
@@ -142,11 +141,6 @@
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
 			<version>2.1</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
 		</dependency>
 
 		<dependency>
@@ -177,12 +171,6 @@
 			<groupId>com.oracle.jsp</groupId>
 			<artifactId>ojsp</artifactId>
 			<version>11.1.1.4.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.oracle.webservices</groupId>
-			<artifactId>wsclient-extended</artifactId>
-			<version>11.1.1</version>
 		</dependency>
 	</dependencies>
 </project>
