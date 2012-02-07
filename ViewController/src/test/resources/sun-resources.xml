@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//Sun Microsystems, Inc.//DTD Application Server 9.0 Resource Definitions //EN"
+   "http://www.sun.com/software/appserver/dtds/sun-resources_1_4.dtd">
+<resources>
+    <jdbc-resource pool-name="demo" jndi-name="jdbc/demo" />
+    <jdbc-connection-pool 
+        name="demo" 
+        datasource-classname="oracle.jdbc.pool.OracleDataSource"
+        res-type="javax.sql.DataSource">
+        <property name="url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+        <property name="user" value="scott"/>
+        <property name="password" value="scott"/>
+    </jdbc-connection-pool>
+</resources>

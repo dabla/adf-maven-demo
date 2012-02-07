@@ -39,12 +39,11 @@ public class PersonAMTest {
 
     @After
     public void tearDown() {
-    	//builder.deactivate();
     }
 
     @Test
     public void testAccess() {
-    	ViewObject view = fixture.getApplicationModule().findViewObject("PersonVO");
+    	final ViewObject view = fixture.getApplicationModule().findViewObject("PersonVO");
     	assertNotNull(view);
     }
 }

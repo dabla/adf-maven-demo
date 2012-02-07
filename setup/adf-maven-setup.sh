@@ -24,6 +24,10 @@ then
 
   mvn install:install-file -Dfile=$MIDDLEWARE_HOME/oracle_common/modules/oracle.adf.view_11.1.1/oracle-page-templates.jar -DgroupId=com.oracle.adf.view -DartifactId=oracle-page-templates -Dversion=11.1.1.4.0 -Dpackaging=jar -DgeneratePom=true
   
+  mvn install:install-file -Dfile=$MIDDLEWARE_HOME/oracle_common/modules/oracle.adf.view_11.1.1/trinidad-api.jar -DgroupId=org.apache.myfaces.trinidad -DartifactId=trinidad-api -Dversion=1.2.12.3-SNAPSHOT -Dpackaging=jar -DgeneratePom=true
+
+  mvn install:install-file -Dfile=$MIDDLEWARE_HOME/oracle_common/modules/oracle.adf.view_11.1.1/trinidad-impl.jar -DgroupId=org.apache.myfaces.trinidad -DartifactId=trinidad-impl -Dversion=1.2.12.3-SNAPSHOT -Dpackaging=jar -DgeneratePom=true		
+
   mvn install:install-file -Dfile=$MIDDLEWARE_HOME/oracle_common/modules/oracle.mds_11.1.1/mdsrt.jar -DgroupId=com.oracle.mds -DartifactId=mdsrt -Dversion=11.1.1.4.0 -Dpackaging=jar -DgeneratePom=true
 
   mvn install:install-file -Dfile=$MIDDLEWARE_HOME/oracle_common/modules/oracle.jdbc_11.1.1/ojdbc6dms.jar -DgroupId=com.oracle.jdbc -DartifactId=ojdbc6dms -Dversion=11.2.0.2.0 -Dpackaging=jar -DgeneratePom=true

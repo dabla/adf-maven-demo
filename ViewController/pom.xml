@@ -85,6 +85,13 @@
             <version>11.1.1.3.0</version>
             <scope>test</scope>
         </dependency>
+		<dependency>
+			<groupId>be.dabla</groupId>
+			<artifactId>adf-maven-demo_model</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
+			<classifier>tests</classifier>
+		</dependency>
 	</dependencies>  
 	
 	<build>
